@@ -28,16 +28,28 @@
             color: #98A2B3;
             text-decoration: none;
         }
-    }
-    .active
-    {
-        img
+        &:hover
         {
-            color: #7F56D9;
-        }
-        a
-        {
-            color: #7F56D9;
+            img
+            {
+                filter: invert(36%) sepia(31%) saturate(2339%) hue-rotate(230deg) brightness(98%) contrast(87%);
+            }
+
+            a
+            {
+                color: #7F56D9;
+            }
         }
     }
+    // .active
+    // {
+    //     img
+    //     {
+    //         color: #7F56D9;
+    //     }
+    //     a
+    //     {
+    //         color: #7F56D9;
+    //     }
+    // }
 }
