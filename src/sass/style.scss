@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+body
+{
+    background: #F9FAFB;
+}
+.container
+{
+    position: relative;
+    width: 1221px;
+    height: 100%;
+    margin: 0 auto;
+    &--flex-row
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.description
+{
+    font-weight: normal;
+    color: #FFFFFF;
+    &--advertising
+    {
+        line-height: 16px;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+    &--discount
+    {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 32px;
+    }
+    &--card-add
+    {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #98A2B3;
+    }
+    &--question
+    {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #667085;
+    }
+    &--footer
+    {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #98A2B3;
+    }
+}
+.title
+{
+    font-style: normal;
+    h2
+    {
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 56px;
+        color: #101828;
+        margin-bottom: 40px;
+    }
+    &--discount
+    {
+        font-size: 34px;
+        line-height: 44px;
+        margin-top: 20px;
+        color: #fff;
+        margin-bottom: 28px;
+    }
+    &--question
+    {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+        color: #101828;
+    }
+    &--footer
+    {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+}
+.button
+{
+    cursor: pointer;
+    height: 44px;
+    &--discount
+    {
+        width: 141px;
+        background: #fff;
+        border: 1px solid #D0D5DD;
+        border-radius: 8px;
+    }
+    &--card-add
+    {
+        width: 192px;
+        background: #7F56D9;
+        color: #fff;
+        margin-top: 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__plus
+    {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &::before
+        {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 8px;
+            background: #fff;
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 2px;
+            background: #fff;
+        }
+    }
+    &--footer
+    {
+        width: 114px;
+        background: #7F56D9;
+        font-size: 16px;
+        color: #FFFFFF;
+        border-radius: 8px;
+    }
+}
+.arrow
+{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    &--left
+    {
+        margin-left: 10px;
+        clip-path: polygon(50% 0, 15% 50%, 50% 100%, 40% 100%, 1% 50%, 40% 0);
+        background: rgb(155, 155, 155);
+    }
+    &--right
+    {
+        margin-right: 10px;
+        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 40% 100%, 80% 49%, 40% 0);
+        background: #fff;
+    }
+    &--pagination-left
+    {
+        width: 12px;
+        height: 12px;
+        background:#D0D5DD;
+        margin-right: 25px;
+        clip-path: polygon(50% 0, 15% 50%, 50% 100%, 40% 100%, 1% 50%, 40% 0);
+    }
+    &--pagination-right
+    {
+        width: 12px;
+        height: 12px;
+        background: #101828;
+        margin-left: 25px;
+        clip-path: polygon(50% 0, 90% 50%, 50% 100%, 40% 100%, 80% 49%, 40% 0);
+    }
+}
+
+@import './bloks/advertising';
+@import './bloks/specialOffer';
+@import './bloks/search';
+@import './bloks/tag';
+@import './bloks/choice';
+@import './bloks/pagination';
+@import './bloks/questions';
+@import './bloks/footer';
+@import './bloks/mobileMenu';
+@import './bloks/media';

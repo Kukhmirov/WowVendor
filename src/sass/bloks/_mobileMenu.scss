@@ -1,0 +1,43 @@
+.mobile
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    height: 66px;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    &__items
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img
+        {
+            width: 20px;
+            height: 20px;
+        }
+        a
+        {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 14px;
+            text-align: center;
+            color: #98A2B3;
+            text-decoration: none;
+        }
+    }
+    .active
+    {
+        img
+        {
+            color: #7F56D9;
+        }
+        a
+        {
+            color: #7F56D9;
+        }
+    }
+}

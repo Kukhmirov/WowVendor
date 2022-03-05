@@ -1,0 +1,46 @@
+.pagination
+{
+    position: relative;
+    // width: 99%;
+    height: 52px;
+    
+    
+    &__wrapper
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        border-radius: 12px;         
+    }
+    &__button
+    {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        cursor: pointer;
+        &:hover
+        {
+            background: #F9F5FF;
+
+        }
+    }
+    .active
+    {
+        background: #7F56D9;
+        color: #fff;
+    }
+    &__skipping
+    {
+        color: #98A2B3;
+        margin-right: 12px;
+    }
+}

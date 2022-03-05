@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Шапка  сайта -->
+
+    <header class="header">
+        <div class="header__advertising">
+            <a href="#" class="arrow arrow--left"></a>
+            <div class="description--advertising">Refer a friend and get $10 off! 🔥 Offer ends February 27!</div>
+            <a href="#" class="arrow arrow--right"></a>
+        </div>
+        <div class="container">
+            <div class="header__logo">
+                <a href="#" class="header__address">
+                    <img src="./assets/icon/Pin.png" alt="address">
+                    Dublin, Republic of Ireland
+                </a>
+                <div class="logo-box">
+                    <img src="./assets/icon/Logo.png" alt="logotip">
+                </div>
+                <div class="header__items">
+                    <a href=""><img src="./assets/icon/search.png" alt="search icon"></a>
+                    <a href=""><img src="./assets/icon/person.png" alt="person icon"></a>
+                    <a href=""><img src="./assets/icon/cart.png" alt="cart icon"></a>
+                </div>
+            </div>
+
+            <menu class="header__menu">
+                <ul>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Platforms</a></li>
+                    <li><a href="#">Releases</a></li>
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </menu>
+        </div>
+    </header>
+    
+    <!-- секция спец. предложения о скидках -->
+
+    <section class="special-offer">
+        <div class="container">
+            <div class="special-offer__link">
+                <a href="">Home</a>
+                <div class="arrow arrow--sub"></div>
+                <a href="">Discover</a>
+                <div class="arrow arrow--sub"></div>
+                <a href="">Games</a>
+            </div>
+
+            <div class="title"><h2>Games</h2></div>
+
+            <div class="special-offer__sentence">
+                <picture>
+                    <source srcset="./assets/image/banner320-2.png" media="(max-width: 780px)">
+                    <source srcset="./assets/image/Banner768.png" media="(max-width: 1024px)">
+                    <source srcset="./assets/image/Banner1.png" media="(max-width: 1280px)">
+                    
+                    <img src="./assets/image/Banner.png" alt="banner">
+                </picture>
+                <div class="text-box">
+                    <div class="title title--discount">Refer a friends and get $10 off!</div>
+                    <div class="description description--discount">Connect with friends. Refer a friend and unlock your $10 coupon! Offer ends February 27.</div>
+                    <button class="button button--discount">Invite a friend</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- панель поиска -->
+    <section class="search">
+        <div class="container container">
+            <form action="#">
+                <div class="search__input">
+                    <div class="search__name">Search for games</div>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <div class="search__category">
+                    <div class="search__name">Category</div>
+                    <div class="category-tag">
+                        <div class="tag">Strategy <span>x</span></div>
+                        <div class="tag">RPG<span>x</span></div>
+                        <div class="tag"><span>x</span></div>
+                        <img src="./assets/icon/arrowDuwn.png" alt="arrow">
+                    </div>
+                </div>
+
+                <div class="search__sort">
+                    <div class="search__name">Sort by</div>
+                    <select name="sort" id="sort">
+                        <option value="Popular">Popular</option>
+                        <option value="Popular">No popular</option>
+                    </select>
+                </div>
+                <div class="search__filters">
+                    <img src="./assets/icon/Filter.png" alt="filter">
+                    Filters
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- панель выбраных тегов формирование через tag.js-->
+
+    <section class="tag-box">
+        <div class="container container--flex-row">
+            <div class="box"></div>
+        </div>
+        
+    </section>
+
+    <!-- карточки с играми для выбора формируются из файла card.js-->
+
+    <section class="choice">
+        <div class="container">
+            <div class="choice__box">
+                <div class="card-add">
+                    <div class="description description--card-add">You can add a product card by clicking on the button</div>
+                    <button class="button button--card-add"><div class="button__plus"></div> Add card</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- нумерация страниц -->
+
+    <section class="pagination">
+        <div class="container">
+            <div class="pagination__wrapper">
+                <a href="#" class="arrow arrow--pagination-left"></a>
+                <div class="pagination__button active">1</div>
+                <div class="pagination__button">2</div>
+                <div class="pagination__button">3</div>
+                <div class="pagination__button">4</div>
+                <div class="pagination__button">5</div>
+                <div class="pagination__skipping">...</div>
+                <div class="pagination__button">99</div>
+                <a href="#" class="arrow arrow--pagination-right"></a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- секция частых вопросов функционал для примера через question.js-->
+
+    <section class="questions">
+        <div class="container">
+            <div class="title title--question">Frequently asked questions</div>
+            <div class="description description--question">Everything you need to know about the games.</div>
+            <div class="questions__item">
+                <div class="asked-box">
+                    <div class="questions__ask">How does work?</div>
+                    <div class="questions__open"></div>
+                </div>
+                <div class="descr close"><P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?</P></div>
+            </div>
+            <div class="questions__item">
+                <div class="asked-box">
+                    <div class="questions__ask">What is a game?</div>
+                    <div class="questions__open "></div>
+                </div>
+                <div class="descr close"><p>A video game or computer game is an electronic game that involves 
+                    interaction with a user interface or input device – such as a joystick, controller, 
+                    keyboard, or motion sensing device – to generate visual feedback. This feedback is 
+                    shown on a video display device, such as a TV set, monitor, touchscreen, or virtual 
+                    reality headset. A video game or computer game is an electronic game that involves 
+                    interaction with a user interface or input device – such as a joystick, controller, 
+                    keyboard, or motion sensing device – to generate visual feedback. This feedback is 
+                    shown on a video display device, such as a TV set, monitor, touchscreen, or virtual 
+                    reality headset.</p> 
+                    <ul>
+                        <li><span>motion sensing device,</span></li>
+                        <li><span>controller</span></li>
+                        <li><span>keyboard</span></li>
+                        <li><span>joystick.</span></li>
+                    </ul>
+                    <div class="descr__title">Visual feedback.</div>
+                    <p>A video game or computer game is an electronic game that involves interaction 
+                        with a user interface or input device – such as a joystick, controller, keyboard, 
+                        or motion sensing device – to generate visual feedback.</p>
+                </div>
+            </div>
+            <div class="questions__item">
+                <div class="asked-box">
+                    <div class="questions__ask">Is there a free trial available?</div>
+                    <div class="questions__open"></div>
+                </div>
+                <div class="descr close"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?</p></div>
+            </div>
+            <div class="questions__item">
+                <div class="asked-box">
+                    <div class="questions__ask">How does billing work?</div>
+                    <div class="questions__open"></div>
+                </div>
+                <div class="descr close"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat amet 
+                    similique cumque quidem magni et quam aspernatur nisi facilis. Impedit quam, perferendis 
+                    accusantium quas qui aliquid voluptatibus provident numquam modi?</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <div class="footer__description">
+                    <div class="title title--footer">Join our newsletter</div>
+                    <div class="description description--footer">We’ll send you a nice letter one per week. No spam.</div>
+                </div>
+                <form class="footer__form">
+                    <input type="text" placeholder="Enter email">
+                    <button class="button button--footer">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer__menu">
+                <div class="footer__categories">
+                    <div class="footer__title">Categories</div>
+                    <ul>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Shooter</a></li>
+                        <li><a href="#">Card Game</a></li>
+                        <li><a href="#">Simulator</a></li>
+                        <li><a href="#">RPG</a></li>
+                        <li><a href="#">Multiplayer</a></li>
+                    </ul>
+                </div>
+                <div class="footer__categories">
+                    <div class="footer__title">Company</div>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__categories">
+                    <div class="footer__title">Legal</div>
+                    <ul>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="footer__categories">
+                    <div class="footer__title">Legal</div>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copy">Copyright © GameVendor, 2022</div>
+        </div>
+    </footer>
+    <section class="mobile">
+        <div class="mobile__items active">
+            <img src="./assets/icon/Home.png" alt="home">
+            <a href="#">Home</a>
+        </div>
+        <div class="mobile__items">
+            <img src="./assets/icon/Browse.png" alt="browse">
+            <a href="#">Browse</a>
+        </div>
+        <div class="mobile__items">
+            <img src="./assets/icon/search.png" alt="search">
+            <a href="#">Search</a>
+        </div>
+        <div class="mobile__items">
+            <img src="./assets/icon/person.png" alt="person">
+            <a href="#">Account</a>
+        </div>
+        <div class="mobile__items">
+            <img src=".//assets/icon/cart.png" alt="cart">
+            <a href="#">Cart</a>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

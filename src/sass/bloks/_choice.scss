@@ -1,0 +1,210 @@
+.choice
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 40px;
+    &__box
+    {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+        .card-add
+        {
+            height: 460px;
+            width: 280px;
+            margin: 0 auto;
+            border: #7F56D9;
+            border-style: dashed;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card
+        {
+            position: relative;
+            margin: 0 auto;
+            width: 280px;
+            height: 460px;
+            padding: 12px;
+            background: #FFFFFF;
+            border-radius: 12px;
+            &__image
+            {
+                position: relative;
+                height: 200px;
+                img
+                {
+                    height: 100%;
+                }
+            }
+            &__tag
+            {
+                height: 22px;
+                padding: 0 8px;
+                background: #F0F9FF;
+                border-radius: 4px;
+                display: inline-flex;
+                margin-top: 15px;
+                align-items: center;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 18px;  
+                
+                &--actionRpg
+                {
+                    color: #0086C9;
+                    span
+                    {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        background: #0086C9;
+                    }
+                }
+                &--multiplayerRpg
+                {
+                    background: #FFF1F3;
+                    color: #E31B53;
+                    span
+                    {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        background: #E31B53;
+                    }
+                }
+                &--action
+                {
+                    background: #FFFAEB;
+                    color: #DC6803;
+                    span
+                    {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        background: #DC6803;
+                    }
+                }
+                &--shooter
+                {
+                    color: #7F56D9;
+                    background: #F9F5FF;
+                    span
+                    {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        background: #7F56D9;
+                    }
+                }
+                &--card-game
+                {
+                    background: #ECFDF3;
+                    color: #039855;
+                    span
+                    {
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        background: #039855;
+                    }
+                }
+
+            }
+            &__name
+            {
+                margin-top: 14px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 24px;
+                color: #101828;
+                cursor: pointer;
+            }
+            &__grade
+            {
+                display: flex;
+                margin-top: 15px;
+                align-items: center;
+                font-size: 12px;
+                line-height: 18px;
+                color: #475467;
+                opacity: 0.6;
+                span
+                {
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 5px;
+                    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                    cursor: pointer;
+                    background: #EAECF0;
+                }
+                .yellow
+                {
+                    background: #FEC84B;
+                }
+                .half
+                {
+                    background: linear-gradient(90deg, #FEC84B 50%, #EAECF0 50%);
+
+                }
+            }
+            &__description
+            {
+                margin-top: 10px;
+                font-size: 14px;
+                line-height: 20px;
+                min-height: 60px;
+                color: #98A2B3;
+            }
+            &__price
+            {
+                position: absolute;
+                bottom: 10px;
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                &::before
+                {
+                    content: '';
+                    position: absolute;
+                    top: -15px;
+                    width: 100%;
+                    height: 1px;
+                    background: #EAECF0;
+                }
+                span
+                {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #101828;
+                    strike
+                    {
+                        color: #D0D5DD;
+                    }
+                }
+            }
+            &__sale
+            {
+                display: inline-flex;
+                padding: 4px 6px;
+                height: 26px;
+                background: #669F2A;
+                border-radius: 4px;
+            }
+        }
+    }
+}

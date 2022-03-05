@@ -1,0 +1,130 @@
+.questions
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    &__item
+    {
+        position: relative;
+        padding-bottom: 40px;
+        width: 100%;
+        height: 100%;
+        margin-top: 24px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        &::after
+        {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: #EAECF0;
+        }
+        &::after:last-child
+        {
+            display: none;
+        }
+        .asked-box
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .descr
+        {
+            margin-top: 24px;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #667085;
+            ul
+            {
+                margin-top: 20px;
+                padding-left: 20px;
+                li
+                {
+                    color: #7F56D9;
+                    span
+                    {
+                        color: #667085;
+                    }
+                }
+            }
+            &__title
+            {
+                margin-top: 30px;
+                margin-bottom: 15px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: #101828;
+            }
+        }
+        .close
+        {
+            display: none;
+        }
+    }
+    &__ask
+    {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #101828;
+    }
+    &__open
+    {
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border: 1.6px solid #7F56D9;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+        overflow: hidden;
+        &::before
+        {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 8px;
+            background: #7F56D9;
+            transition: .3s;
+        }
+        &::after
+        {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 2px;
+            background: #7F56D9;
+            transition: .3s;
+        }
+        &--close
+        {
+            border: 1.6px solid #ff0000;
+            &::before
+            {
+                content: '';
+                opacity: 0;
+                background: #ff0000;
+            }
+            &::after
+            {
+                content: '';
+                background: #ff0000;
+            }
+        }
+    }
+}

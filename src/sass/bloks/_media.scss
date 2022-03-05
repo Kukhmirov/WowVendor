@@ -1,0 +1,359 @@
+@media (max-width: 1281px) {
+    .container
+    {
+        max-width: 976px;
+    }
+    .description
+    {
+        &--discount
+        {
+            margin-bottom: 20px;
+        }
+    }
+    .header
+    {
+        &__advertising
+        {
+            width: 1024px;
+        }
+    }
+    .special-offer
+    {
+        .text-box
+        {
+            top: 20%;
+            left: 8%;
+            height: initial;
+        }
+    }
+    .search
+    {
+        form
+        {
+            column-gap: 10px;
+        }
+        &__input
+        {
+            width: 480px;
+        }
+        &__category
+        {
+            width: 230px;
+            .category-tag
+            {
+                .tag:nth-child(2)
+                {
+                    display: none;
+                }
+                .tag:nth-child(3)
+                {
+                    &::before
+                    {
+                        content: '+4';
+                    }
+                }
+            }
+        }
+        &__sort
+        {
+            width: 230px;
+        }
+    }
+    .choice
+    {
+        &__box
+        {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5%;
+        }
+    }
+    .footer
+    {
+        &__form
+        {
+            input
+            {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .container
+    {
+        width: 720px;
+    }
+    .description
+    {
+        &--advertising
+        {
+            font-size: 14px;
+        }
+    }
+    .title
+    {
+        &--discount
+        {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+    .button 
+    {
+        &--footer
+        {
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    .header
+    {
+        height: 100px;
+        &__advertising
+        {
+            width: 95%;
+        }
+        &__menu
+        {
+            display: none;
+        }
+        &__logo
+        {
+            justify-content: center;
+            a
+            {
+                display: none;
+            }
+        }
+        &__items
+        {
+            display: none;
+        }
+    }
+    .special-offer
+    {
+        .text-box
+        {
+            top: 6%;
+            left: 5%;
+        }
+    }
+    .search
+    {
+        padding-top: 40px;
+        form
+        {
+            column-gap: 5px;
+        }
+        &__input
+        {
+            width: 352px;
+        }
+        &__category
+        {
+            width: 168px;
+            .category-tag
+            {
+                .tag:nth-child(1)
+                {
+                    display: none;
+                }
+                .tag:nth-child(3)
+                {
+                    &::before
+                    {
+                        content: '+6';
+                    }
+                }
+            }
+        }
+        &__sort
+        {
+            width: 168px;
+        }
+    }
+    .choice
+    {
+        &__box
+        {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 5%;
+        }
+    }
+    .footer
+    {
+        padding-bottom: 100px;
+        &__head
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        &__form
+        {
+            margin-top: 32px;
+            input
+            {
+                width: 578px;
+            }
+        }
+    }
+    .mobile
+    {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .container
+    {
+        width: 90%;
+    }
+    .description
+    {
+        &--advertising
+        {
+            line-height: 20px;
+            text-align: center;
+        }
+        &--discount
+        {
+            font-size: 14px;
+        }
+    }
+    .title
+    {
+        &--discount
+        {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 22px;
+            line-height: 24px;
+            width: 70%;
+        }
+    }
+    .button
+    {
+        &--discount
+        {
+            width: 216px;
+            position: absolute;
+            bottom: -260px;
+            left: 20px;
+        }
+    }
+    .header
+    {
+        height: 120px;
+        &__advertising
+        {
+            height: 100%;
+        }
+        .logo-box
+        {
+            width: 152px;
+            height: 26px;
+        }
+        .arrow
+        {
+            &--left
+            {
+                margin-left: 14px;
+            }
+            &--right
+            {
+                margin-right: 15px;
+            }
+        }
+    }
+    .special-offer
+    {
+        &__sentence
+        {
+            display: flex;
+            justify-content: center;
+            picture
+            {
+                img
+                {
+                    height: 448px;
+                    width: 285px;
+                    margin: 0 auto;
+                    object-fit: cover;
+                    object-position: 95%;
+                    border-radius: 16px;
+                }
+            }
+            .text-box
+            {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+    .search
+    {
+        padding-top: 40px;
+        form
+        {
+            column-gap: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__input
+        {
+            width: 100%;
+        }
+        &__category
+        {
+            display: none;
+        }
+        &__sort
+        {
+            display: none;
+        }
+        &__filters
+        {
+            display: flex;
+        }
+    }
+    .tag-box
+    {
+        .box
+        {
+            flex-wrap: wrap;
+        }
+        &__item
+        {
+            margin-top: 10px;
+        }
+    }
+    .choice
+    {
+        &__box
+        {
+            grid-template-columns: 1fr;
+            column-gap: 5%;
+        }
+    }
+    .footer
+    {
+        form
+        {
+            input
+            {
+                width: 100%;
+            }
+        }
+        &__menu
+        {
+            grid-template-columns: 1fr;
+        }
+        &__categories
+        {
+            margin-top: 32px;
+        }
+    }
+}

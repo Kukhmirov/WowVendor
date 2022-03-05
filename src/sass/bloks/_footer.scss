@@ -1,0 +1,79 @@
+.footer
+{
+    width: 100%;
+    padding: 56px 0 64px 0;
+    background: #1D2939;
+    &__head
+    {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 110px;
+        &::after
+        {
+            content: '';
+            position: absolute;
+            bottom: -56px;
+            width: 100%;
+            height: 1px;
+            background: #344054;
+        }
+    }
+    &__form
+    {
+        input
+        {
+            padding-left: 18px;
+            margin-right: 8px;
+            font-size: 16px;
+            line-height: 24px;
+            height: 44px;
+            width: 470px;
+            border: 1px solid #D0D5DD;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+    }
+    &__menu
+    {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__title
+    {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: #98A2B3;
+    }
+    &__categories
+    {
+        ul
+        {
+            li
+            {
+                list-style: none;
+                a
+                {
+                    text-decoration: none;
+                    margin-bottom: 8px;
+                    color: #F2F4F7;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    &__copy
+    {
+        margin-top: 88px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #667085;
+    }
+}

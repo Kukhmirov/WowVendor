@@ -1,0 +1,53 @@
+.special-offer
+{
+    padding-top: 40px;
+    &__link
+    {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        a
+        {
+            font-style: normal;
+            font-weight: 500;
+            margin-right: 15px;
+            font-size: 14px; 
+            line-height: 20px;
+            color: #667085;
+            text-decoration: none;
+            &:last-child
+            {
+                color: #D0D5DD;
+            }
+        }
+        .arrow
+        {
+            &--sub
+            {
+                width: 5px;
+                height: 8px;
+                margin-right: 10px;
+                clip-path: polygon(10% 0, 75% 50%, 10% 100%, 0% 100%, 65% 50%, 0% 0%);
+                background: #000;
+            }
+        }
+    }
+    &__sentence
+    {
+        position: relative;
+        img
+        {
+            width: 100%;
+        }
+        .text-box
+        {
+            position: absolute;
+            top: 120px;
+            left: 120px;
+            width: 264px;
+            height: 322px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
